@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Train</title>
+</head>
+<body>
+    <header>
+        <h1>Network Anomaly Detection in an Imbalanced Traffic Environement</h1>
+    </header>
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('train') }}">Train</a>
+        <a href="{{ url_for('test') }}">Test</a>
+        <a href="{{ url_for('analysis') }}">Analysis</a>
+        <a href="{{ url_for('view_data') }}">View Data</a>
+    </nav>
+    <main>
+        <center>
+        <h2>Model Accuracy Results</h2>
+        <b><p style="color: #ad3c3c;">PCA with Random Forest Accuracy: {{ pca_rf_accuracy }}</p>
+        <b><p style="color: #ad3c3c;">SVM Accuracy: {{ svm_accuracy }}</p>
+        <h2>Comparison of Models</h2><b>
+        <img src="data:image/png;base64,{{ plot_url }}" alt="Accuracy Comparison Plot">
+        </center>
+    </main>
+    <footer>
+        <p>Intrusion Detection System</p>
+    </footer>
+</body>
+</html>

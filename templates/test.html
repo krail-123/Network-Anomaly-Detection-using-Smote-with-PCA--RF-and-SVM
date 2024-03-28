@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link href="{{ url_for('static', filename='style.css') }}" type="text/css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .class-labels ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+        .class-labels ul li {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+        td {
+            background-color: #fff;
+        }
+        tr:nth-child(even) td {
+            background-color: #f2f2f2;
+        }
+        caption {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Testing Data</h1>
+    </header>
+    <main>
+        <div class="class-labels">
+            <h3>Class Labels</h3>
+            <div style="display: flex; flex-wrap: wrap;">
+                <div style="flex: 16.666%; padding: 5px;">
+                    <ul>
+                        <li>0: back</li>
+                        <li>1: buffer_overflow</li>
+                        <li>2: ftp_write</li>
+                        <li>3: guess_passwd</li>
+                        <li>4: imap</li>
+                        <li>5: ipsweep</li>
+                    </ul>
+                </div>
+                <div style="flex: 16.666%; padding: 5px;">
+                    <ul>
+                        <li>6: land</li>
+                        <li>7: loadmodule</li>
+                        <li>8: multihop</li>
+                        <li>9: neptune</li>
+                        <li>10: nmap</li>
+                        <li>11: normal</li>
+                    </ul>
+                </div>
+                <div style="flex: 16.666%; padding: 5px;">
+                    <ul>
+                        <li>12: perl</li>
+                        <li>13: phf</li>
+                        <li>14: pod</li>
+                        <li>15: portsweep</li>
+                        <li>16: rootkit</li>
+                        <li>17: satan</li>
+                    </ul>
+                </div>
+                <div style="flex: 16.666%; padding: 5px;">
+                    <ul>
+                        <li>18: smurf</li>
+                        <li>19: spy</li>
+                        <li>20: teardrop</li>
+                        <li>21: warezclient</li>
+                        <li>22: warezmaster</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <center>
+            <!-- Display the CSV data -->
+            {{ data_html | safe }}
+        </center>
+    </main>
+</body>
+</html>

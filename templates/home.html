@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<title>Home</title>
+</head>
+<body>
+<header>
+<h1>Network Anomaly Detection in an Imbalanced Traffic Environement</h1>
+</header>
+<nav>
+<a href="{{ url_for('home') }}">Home</a>
+<a href="{{ url_for('train') }}">Train</a>
+<a href="{{ url_for('test') }}">Test</a>
+<a href="{{ url_for('analysis') }}">Analysis</a> 
+<a href="{{ url_for('view_data') }}">View Data</a>
+
+</nav>
+<main>
+    <img src="{{ url_for('static', filename='intrusion Image.jpg') }}" style="max-width: 100%;">
+
+<center>
+<h2>Intrusion Detection System</h2></center>
+<p>An intrusion detection system (IDS) is a system that monitors network traffic for suspicious activity and alerts system or network administrators when such activity is detected. IDS can be implemented at various levels of a network, including the network perimeter, individual hosts, or applications.</p>
+<h2>Types of Intrusion Detection Systems</h2>
+<p>There are two main types of intrusion detection systems: signature-based and anomaly-based.</p>
+<ul>
+<li><strong>Signature-based IDS:</strong> Signature-based IDSs use predefined rules or signatures to detect known attack patterns. They are good at detecting known attacks but may not detect new or unknown attacks.</li>
+<li><strong>Anomaly-based IDS:</strong> Anomaly-based IDSs use machine learning algorithms to learn what normal behavior looks like and then detect deviations from that norm. They are better at detecting new or unknown attacks but may generate more false positives.</li>
+</ul>
+</main>
+<footer>
+<p>Intrusion Detection System</p>
+</footer>
+</body>
+</html>

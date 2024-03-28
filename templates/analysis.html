@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="{{ url_for('static', filename='style.css') }}" type="text/css" rel="stylesheet">
+<title>Analysis</title>
+</head>
+<body>
+<header>
+<center><h1>Analysis</h1></center>
+</header>
+<main>
+    <center>
+        <h3>PCA-RF Prediction</h3>
+        <img src="{{ url_for('static', filename='pca_rf_predictions.png') }}" alt="Confusion Matrix of SVM" width="700">
+        <h3>SVM Prediction</h3>
+        <img src="{{ url_for('static', filename='svm_predictions.png') }}" alt="Confusion Matrix of SVM" width="700">
+        <h3>Confusion Matrix for PCA with RF</h3>
+        <img src="{{ url_for('static', filename='cm_pca_rf.png') }}" alt="Confusion Matrix for PCA with RF" width="700">
+        <h3>Confusion Matrix SVM</h3>
+        <img src="{{ url_for('static', filename='cm_svm.png') }}" alt="Confusion Matrix of SVM" width="700">
+        
+        
+    </center>
+</main>
+<footer>
+<p>Intrusion Detection System</p>
+</footer>
+</body>
+</html>
