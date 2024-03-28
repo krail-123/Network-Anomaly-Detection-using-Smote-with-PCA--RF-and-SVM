@@ -1,0 +1,81 @@
+body {
+    font-family:  sans-serif; /* Changed font to Roboto */
+    background-color: #d6ecf5; /* Changed body background color to a light blue */
+    line-height: 1.6; /* Increase line height for better readability */
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: 'Montserrat'; /* Changed font to Montserrat */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ad3c3c;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif; /* Changed font to Open Sans */
+}
+
+nav a:hover {
+    color: #f8f8f8;
+}
+
+main {
+    padding: 20px;
+    background-color: #cee5e9e3;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    font-family: 'Lato', sans-serif; /* Changed font to Lato */
+}
+
+footer {
+    background-color: #29c7ad; /* Updated color to a teal green */
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Verdana', sans-serif; /* Changed font to Verdana */
+    letter-spacing: 1px; /* Increased letter spacing */
+    margin-top: 20px; /* Increased top margin for more spacing */
+}
+
+/* Additional Styles for More Colorful Elements */
+
+nav a {
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Yellow color on hover */
+}
+
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding shadow effect */
+}
+
+
+
+footer {
+    background-color: #16b68e; /* Updated footer color to green */
+}
+
+footer a {
+    color: #fff; /* White color for footer links */
+}
+
+footer a:hover {
+    color: #ffcc00; /* Yellow color on hover for footer links */
+}
